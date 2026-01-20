@@ -53,10 +53,14 @@ Q-Learning is a **model-free, off-policy** reinforcement learning algorithm that
 
 ### 🎮 Environments Solved
 
+<div align="center">
+
 | Environment | Description | State Space | Action Space | Link |
 | :--- | :--- | :--- | :--- | :--- |
 | **FrozenLake-v1** ❄️ | Navigate a slippery grid to reach the goal without falling into holes | 16 (4x4) | 4 (Up/Down/Left/Right) | [Documentation](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) |
 | **Taxi-v3** 🚖 | Pick up passengers and drop them off at correct locations efficiently | 500 | 6 (Move + Pickup/Dropoff) | [Documentation](https://gymnasium.farama.org/environments/toy_text/taxi/) |
+
+</div>
 
 <br>
 
@@ -127,13 +131,15 @@ The **slippery version** (`is_slippery=True`) introduces **stochasticity** into 
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/44bf164c-c60e-4c77-8c3d-7f32f27be2e9" alt="FrozenLake Environment" width="60%"/>
+<img src="https://github.com/user-attachments/assets/44bf164c-c60e-4c77-8c3d-7f32f27be2e9" alt="FrozenLake Environment" width="35%"/>
 
 *Custom 5x5 FrozenLake Map: The Minefield*
 
 </div>
 
 ### ⚖️ Deterministic vs. Stochastic Comparison
+
+<div align="center">
 
 | Feature | Non-Slippery (`False`) | Slippery (`True`) |
 | :--- | :--- | :--- |
@@ -142,6 +148,8 @@ The **slippery version** (`is_slippery=True`) introduces **stochasticity** into 
 | **Strategy** | Shortest path (can walk on edges) | **Safe path** (avoids edges to prevent accidental falls) |
 | **Difficulty** | Easy | **Hard** |
 | **Agent Behavior** | Moves directly and predictably | **Gets "thrown around"** - doesn't move straight, requires longer training |
+
+</div>
 
 ### 🔬 Hyperparameter Comparison Experiment
 
@@ -241,31 +249,31 @@ Watch how different hyperparameter configurations affect agent behavior. Notice 
 <td align="center" width="50%">
 <strong>🥇 1. Rookie (Low Training)</strong><br/>
 <strong>Win Rate: 91.0%</strong><br/>
-<video src="videos_comparison/1_Rookie_Low_Training.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/user-attachments/assets/4663373b-73e6-4a48-8c59-a915fcd002fc" controls="controls" style="max-width: 100%;"></video>
 </td>
 <td align="center" width="50%">
 <strong>2. Explorer (Slow Decay)</strong><br/>
 <strong>Win Rate: 56.0%</strong><br/>
-<video src="videos_comparison/2_Explorer_Slow_Decay.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/user-attachments/assets/c710deda-39d9-4474-9735-60a742273791" controls="controls" style="max-width: 100%;"></video>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <strong>🥈 3. Balanced (Standard)</strong><br/>
 <strong>Win Rate: 81.0%</strong><br/>
-<video src="videos_comparison/3_Balanced_Standard.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/user-attachments/assets/fcbc776d-7be9-42be-9e6d-1c56fb331c91" controls="controls" style="max-width: 100%;"></video>
 </td>
 <td align="center" width="50%">
 <strong>5. Master (Long Training)</strong><br/>
 <strong>Win Rate: 36.0%</strong><br/>
-<video src="videos_comparison/4_Master_Long_Training.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/user-attachments/assets/79862423-fb70-42bb-b330-f800237dddfc" controls="controls" style="max-width: 100%;"></video>
 </td>
 </tr>
 <tr>
 <td align="center" colspan="2">
 <strong>🥉 5. Ultra (Maximum)</strong><br/>
 <strong>Win Rate: 79.0%</strong><br/>
-<video src="videos_comparison/5_Ultra_Maximum.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/user-attachments/assets/800e51fb-bc6d-4422-b9c9-cf354bda6200" controls="controls" style="max-width: 100%;"></video>
 </td>
 </tr>
 </table>
@@ -300,12 +308,16 @@ My initial attempts yielded 0% success rate due to a "death trap" bottleneck in 
 
 #### 4. 📊 The Training Paradox Explained
 
+<div align="center">
+
 | Configuration | Episodes | Result | Analysis |
 | :--- | :--- | :--- | :--- |
 | **Rookie** | 50k | **91%** ✅ | Found safe path, stuck to it |
 | **Balanced** | 150k | 81% | Good but slightly over-trained |
 | **Ultra** | 300k | 79% | Diminishing returns |
 | **Master** | 200k | 36% ❌ | High LR caused instability |
+
+</div>
 
 **Conclusion**: In stochastic environments, **early stopping** and **stable hyperparameters** often outperform aggressive training schedules.
 
@@ -416,7 +428,7 @@ I loaded and tested pre-trained models from the Hub, recording successful episod
 **Author:** Thomas Simonini (Course Instructor)
 
 <div align="center">
-  <video src="video_frozenlake/frozenlake-win-hunt-episode-0.mp4" controls="controls" style="max-width: 100%;">
+  <video src="https://github.com/user-attachments/assets/84937bc8-01a6-4e5b-8345-d32e862a814e" controls="controls" style="max-width: 100%;">
   </video>
 </div>
 
@@ -426,7 +438,7 @@ I loaded and tested pre-trained models from the Hub, recording successful episod
 **Author:** Thomas Simonini (Course Instructor)
 
 <div align="center">
-  <video src="video_taxi/taxi-win-hunt-episode-0.mp4" controls="controls" style="max-width: 100%;">
+  <video src="https://github.com/user-attachments/assets/6ddfdb43-106a-4f49-8d9a-c52458cdcdce" controls="controls" style="max-width: 100%;">
   </video>
 </div>
 
