@@ -37,14 +37,14 @@ This repository contains my solutions and implementations for the **Hugging Face
 | :--- | :--- | :--- | :--- | :--- |
 | **Unit 1** | ✅ **Completed** | LunarLander-v2 | PPO | [View →](Unit%201%20-%20Introduction%20to%20Deep%20Reinforcement%20Learning/) |
 | **Unit 2** | ✅ **Completed** | FrozenLake, Taxi-v3 | Q-Learning | [View →](Unit%202%20-%20Introduction%20to%20Q-Learning/) |
-| **Unit 3** | 🚧 In Progress | Space Invaders | DQN | Coming Soon |
-| **Unit 4** | 🔜 Coming Soon | PixelCopter, CartPole | Policy Gradient | - |
+| **Unit 3** | ✅ **Completed** | Space Invaders | DQN | [View →](Unit%203%20-%20Deep%20Q-Learning/) |
+| **Unit 4** | 🚧 In Progress | PixelCopter, CartPole | Policy Gradient | Coming Soon |
 | **Unit 5** | 🔜 Coming Soon | SnowballTarget, Pyramids | MLAgents | - |
 | **Unit 6** | 🔜 Coming Soon | Panda Gym, PyBullet | Actor-Critic | - |
 | **Unit 7** | 🔜 Coming Soon | SoccerTwos | Multi-Agent | - |
 | **Unit 8** | 🔜 Coming Soon | LunarLander-v2, VizDoom | PPO | - |
 
-**Progress: 2/8 Core Units Completed (25%)**
+**Progress: 3/8 Core Units Completed (37.5%)**
 
 </div>
 
@@ -74,10 +74,12 @@ This repository contains my solutions and implementations for the **Hugging Face
 
 ---
 
-#### 🔜 Unit 3: Deep Q-Learning with Atari Games
+#### ✅ [Unit 3: Deep Q-Learning with Atari Games](Unit%203%20-%20Deep%20Q-Learning/)
 **Environment:** `Space Invaders`  
 **Algorithm:** Deep Q-Network (DQN)  
-**Status:** 🚧 **In Progress**
+**Status:** ✅ **Completed**
+
+*Trained a DQN agent to play Space Invaders using neural networks to handle high-dimensional visual observations. Implemented experience replay, fixed Q-targets, and frame stacking to stabilize training and capture temporal information.*
 
 ---
 
@@ -88,10 +90,10 @@ This repository contains my solutions and implementations for the **Hugging Face
 
 ### **Part 2: Advanced Methods**
 
-#### 🔜 Unit 4: Policy Gradient with PyTorch
+#### 🚧 Unit 4: Policy Gradient with PyTorch
 **Environments:** `PixelCopter`, `CartPole`  
 **Algorithm:** Policy Gradient Methods  
-**Status:** 🚧 **Coming Soon**
+**Status:** 🚧 **In Progress**
 
 ---
 
@@ -147,6 +149,12 @@ This repository contains my solutions and implementations for the **Hugging Face
 - **Model Hubs:** 
   - [q-FrozenLake-v1-4x4-noSlippery](https://huggingface.co/MykhailoMatsyshyn/q-FrozenLake-v1-4x4-noSlippery)
   - [q-Taxi-v3](https://huggingface.co/MykhailoMatsyshyn/q-Taxi-v3)
+
+### 🏆 Unit 3: Deep Q-Learning
+- **Environment:** Space Invaders (Atari)
+- **Mean Reward:** 838.5 ± 373.08 (evaluation)
+- **Status:** ✅ Trained successfully
+- **Model Hub:** [dqn-SpaceInvadersNoFrameskip-v4](https://huggingface.co/MykhailoMatsyshyn/dqn-SpaceInvadersNoFrameskip-v4)
 
 <br>
 
